@@ -4,7 +4,7 @@ from google import genai
 from PIL import Image
 import io
 
-TOKEN_TELEGRAM = "8693676560:AAGpkdatG3w05C1Mwi7TB"
+TOKEN_TELEGRAM = "8693676560:AAGpkdatG3w05C1Mwi7TB-qTY3Ex93F1Meo"
 CHAVE_GEMINI = "AQ.Ab8RN6LYgZ9NZpoG-uO1X-vS2AImw5g"
 
 bot = telebot.TeleBot(TOKEN_TELEGRAM)
