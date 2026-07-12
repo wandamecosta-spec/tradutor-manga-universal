@@ -5,10 +5,11 @@ from PIL import Image
 import io
 
 TOKEN_TELEGRAM = "8693676560:AAGpkdatG3w05C1Mwi7TB-qTY3Ex93F1Meo"
-CHAVE_GEMINI = "AQ.Ab8RN6LYgZ9NZpoG-uO1X-vS2AImw5g"
+# Configurando a chave no formato novo exigido pela Google
+os.environ["GEMINI_API_KEY"] = "AQ.Ab8RN6LYgZ9NZpoG-uO1X-vS2AImw5g"
 
 bot = telebot.TeleBot(TOKEN_TELEGRAM)
-client = genai.Client(api_key=CHAVE_GEMINI)
+client = genai.Client()
 
 print("Bot Universal Iniciado!")
 
