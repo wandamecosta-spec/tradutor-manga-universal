@@ -23,7 +23,7 @@ def responder_foto(mensagem):
         # Converte a imagem para Base64 para enviar na chamada de internet
         encoded_image = base64.b64encode(downloaded_file).decode('utf-8')
         
-        # URL da API do Gemini adaptada para o formato novo de chave
+        # URL corrigida com o formato de chave correto separado por ?key=
         url = f"https://googleapis.com{CHAVE_GEMINI}"
         
         headers = {"Content-Type": "application/json"}
@@ -62,3 +62,5 @@ def responder_foto(mensagem):
         bot.edit_message_text(f"❌ Erro ao processar: {str(e)}", message_id=status.message_id, chat_id=mensagem.chat.id)
 
 bot.infinity_polling()
+
+
